@@ -24,3 +24,5 @@
 (straight-use-package 'gud)
 (straight-use-package 'tramp)
 (straight-use-package 'go-mode)
+(straight-use-package 'org)
+(straight-use-package 'highlight-sexp)

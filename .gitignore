@@ -4,4 +4,6 @@
 var/cache
 var/lib
 var/packages
+auto-save-list
+transient
 
