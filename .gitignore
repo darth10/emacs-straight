@@ -1,3 +1,7 @@
-auto-save-list/
-transient/
-var/
+*.elc
+*.el~
+.cask/
+var/cache
+var/lib
+var/packages
+

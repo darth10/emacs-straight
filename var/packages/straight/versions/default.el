@@ -1,0 +1,13 @@
+(("cl-lib" . "e79686c4a26959c0ecba0951a7e335ed28035386")
+ ("dash.el" . "11907f4592ff1813536366d54245d3ecf6b99198")
+ ("emacs-async" . "bd68cc1ab1ac6af890e250bdaa12ffb1cb9649be")
+ ("emacsmirror-mirror" . "5c307bd854fa1a6f69d1a961ac6888fcd4e1849f")
+ ("gnu-elpa-mirror" . "01001b660cd3677228e25a6f544d579b56845c37")
+ ("helm" . "caaf1a9d306fa3b57a78b262ea665cc7f0019d65")
+ ("magit" . "a519fb310c9ed0dd8c3debc1ce7cc93304727b98")
+ ("melpa" . "7a4e84530b4607a277fc3b678fe7b34b1c5e3b4f")
+ ("popup-el" . "80829dd46381754639fb764da11c67235fe63282")
+ ("straight.el" . "4ccc56c3aeb77b9ef4c6e0acb93446e6ee6b3e91")
+ ("transient" . "9fb3f797f10fd069c2bffa7a3ead746aa53d1a25")
+ ("with-editor" . "45c29f9bfb7f2df93426ce1571e2f4f41ed4e492"))
+:alpha
