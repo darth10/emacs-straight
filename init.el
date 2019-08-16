@@ -1,12 +1,18 @@
 (defvar bootstrap-version)
+
+(defvar straight-repository-user "darth10") ; TODO remove this soon
+(defvar straight-repository-branch "feature-paths")
+(defvar straight-base-dir (expand-file-name "var/" user-emacs-directory))
+
 (let ((bootstrap-file
-       (expand-file-name "var/straight/repos/straight.el/bootstrap.el" user-emacs-directory))
+       (expand-file-name "straight/repos/straight.el/bootstrap.el" straight-base-dir))
       (bootstrap-version 5))
   (unless (file-exists-p bootstrap-file)
-    ;; TODO need to set straight-base-dir here
     (with-current-buffer
         (url-retrieve-synchronously
-         "https://raw.githubusercontent.com/raxod502/straight.el/develop/install.el"
+	 (format
+          "https://raw.githubusercontent.com/darth10/straight.el/%s/install.el"
+	  straight-repository-branch)
          'silent 'inhibit-cookies)
       (goto-char (point-max))
       (eval-print-last-sexp)))
