@@ -1,7 +1,7 @@
 (defvar bootstrap-version)
 
 (defvar straight-repository-user "darth10") ; TODO remove this soon
-(defvar straight-repository-branch "feature-paths")
+(defvar straight-repository-branch "feature/configurable-base-path")
 (defvar straight-base-dir (expand-file-name "var/" user-emacs-directory))
 
 (let ((bootstrap-file
