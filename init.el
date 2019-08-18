@@ -10,9 +10,9 @@
   (unless (file-exists-p bootstrap-file)
     (with-current-buffer
         (url-retrieve-synchronously
-	     (format
+         (format
           "https://raw.githubusercontent.com/darth10/straight.el/%s/install.el"
-	      straight-repository-branch)
+          straight-repository-branch)
          'silent 'inhibit-cookies)
       (goto-char (point-max))
       (eval-print-last-sexp)))
