@@ -1,7 +1,7 @@
 (defvar bootstrap-version)
 
-(defvar straight-repository-user "darth10") ; TODO remove this soon
-(defvar straight-repository-branch "feature/configurable-base-path")
+(defvar straight-repository-user "raxod502")
+(defvar straight-repository-branch "develop")
 (defvar straight-base-dir (expand-file-name "var/packages/" user-emacs-directory))
 
 (let ((bootstrap-file
@@ -11,7 +11,8 @@
     (with-current-buffer
         (url-retrieve-synchronously
          (format
-          "https://raw.githubusercontent.com/darth10/straight.el/%s/install.el"
+          "https://raw.githubusercontent.com/%s/straight.el/%s/install.el"
+          straight-repository-user
           straight-repository-branch)
          'silent 'inhibit-cookies)
       (goto-char (point-max))
