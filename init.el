@@ -10,10 +10,9 @@
   (unless (file-exists-p bootstrap-file)
     (with-current-buffer
         (url-retrieve-synchronously
-         (format
-          "https://raw.githubusercontent.com/%s/straight.el/%s/install.el"
-          straight-repository-user
-          straight-repository-branch)
+         (format "https://raw.githubusercontent.com/%s/straight.el/%s/install.el"
+                 straight-repository-user
+                 straight-repository-branch)
          'silent 'inhibit-cookies)
       (goto-char (point-max))
       (eval-print-last-sexp)))
